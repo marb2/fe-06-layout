@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            fe-06-layout
+        </title>
+        <style>
+            #kvadratas {
+                background-color: silver;
+                width:50vw;
+                height:50vw;
+                position:relative;
+                margin:auto;
+            }
+            #R, #G, #B {
+                position: relative;
+                top:calc(50% - 2vw);
+                margin:30%;
+                font-size:3vw;
+                color:white;
+                display:inline;   
+            }
+            #raudonas {
+                position:relative;
+                top:0.5vw;
+                left:20%;
+                background-color:rgba(255, 0, 0, 0.5);
+                border:0.5em solid red;
+            }
+            #zalias {
+                position:absolute;
+                background-color:rgba(21, 255, 0, 0.5);
+                border:0.5vw solid green;
+                bottom:0.5vw;
+                left:0.5vw;
+            }
+            #melynas {
+                position:absolute;
+                background-color:rgba(0, 38, 255, 0.5);
+                border:0.5vw solid blue;
+                bottom:0.5vw;
+                right:0.5vw;
+            }
+            #raudonas, #zalias, #melynas {
+                height:60%;
+                width:60%;
+                text-align:center;
+                border-radius:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum aliquet lectus eu mollis. Vivamus placerat, nisi a sollicitudin tincidunt, justo libero scelerisque ante, vitae mollis diam enim sit amet eros. Vestibulum vitae erat aliquam, iaculis lectus at, ornare purus. Phasellus volutpat erat vitae venenatis fringilla. Nam suscipit tortor sem, in sodales tortor dignissim vel. Mauris at euismod libero. Quisque risus felis, vulputate sed malesuada ut, blandit at quam. Cras faucibus neque non felis imperdiet blandit. Praesent consequat accumsan lorem, ut posuere metus pellentesque eu. Quisque fermentum ac tortor vitae consequat.</p> 
+        <div id="kvadratas">
+            <div id="raudonas"><div id="R">R</div></div>
+            <div id="zalias"><div id="G">G</div></div>
+            <div id="melynas"><div id="B">B</div></div>
+        </div>
+    </body>
+</html>
